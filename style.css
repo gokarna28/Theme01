@@ -7,3 +7,43 @@ Tags: Minimal, responsive, sidebar
 Author: Gokarna Chaudhary
 Author URI: https://github.com/gokrna28
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins" sans-serif;
+}
+body {
+  font-family: "poppins" sans-serif;
+}
+.header_container {
+  background-color: #dbdbdb;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  .logo_img{
+    width: 50px;
+  }
+  .nav {
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    li{
+      margin: 0 20px;
+      color: black;
+    }
+  }
+}
+
+.content_img {
+  width: 200px;
+}
+
+.wp-block-gallery{
+  width: 40%;
+  margin: 10px;
+}
+.wp-block-image{
+  width: 100%;
+} 

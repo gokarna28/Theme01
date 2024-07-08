@@ -1,13 +1,11 @@
-<!-- main theme file -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wordpress Theme</title>
- </head>
- <body>
-    <h1>The Pop Theme</h1>
-    <?php ?>
- </body>
- </html>
+<?php
+// Including WordPress header
+get_header();
+?>
+<div class="content">
+    
+</div>
+<?php
+// Including WordPress footer
+get_footer();
+?>
