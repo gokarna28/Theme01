@@ -1,0 +1,153 @@
+/* 
+Theme Name: Pop theme
+Text Domain: Pop theme
+version: 2.0
+Description: minimal sidebar theme
+Tags: Minimal, responsive, sidebar
+Author: Gokarna Chaudhary
+Author URI: https://github.com/gokrna28
+ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins" sans-serif;
+}
+body {
+  font-family: "poppins" sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+.header_container {
+  background-color: #dbdbdb;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  .logo_img {
+    width: 50px;
+  }
+  .nav {
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    li {
+      margin: 0 20px;
+      a {
+        color: black;
+        text-decoration: none;
+        transition: all 0.25s ease-in;
+      }
+      a:hover {
+        text-decoration: underline solid red;
+      }
+      .sub-menu {
+        position: absolute;
+        background-color: #c7c6c6;
+        opacity: 0;
+        transition: 1s;
+       
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+.nav>li:hover .sub-menu{
+  opacity: 1;
+}
+.current_page_item,
+.current-menu-item a {
+  text-decoration: underline;
+  color: red;
+}
+.content_img {
+  width: 200px;
+}
+
+.wp-block-gallery {
+  width: 40%;
+  margin: 10px;
+}
+.wp-block-image {
+  width: 100%;
+}
+
+.post_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  .post_container {
+    background-color: rgb(235, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+    margin: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    h1 {
+      padding: 10px;
+    }
+  }
+}
+
+.single_container {
+  /* background-color: red; */
+  padding: 20px;
+  img {
+    width: 50%;
+  }
+}
+.comment-respond {
+  background-color: rgb(231, 229, 229);
+  padding: 20px;
+
+  .comment-form {
+    padding: 10px;
+    label {
+      display: block;
+    }
+    .comment-form-cookies-consent {
+      display: flex;
+      justify-content: start;
+      /* background-color: red; */
+      padding: 0;
+      margin: 5px 0;
+      input {
+        margin: 0;
+      }
+      label {
+        margin: 0;
+      }
+    }
+    textarea {
+      width: 100%;
+      height: auto;
+    }
+    input {
+      padding: 5px;
+      width: 300px;
+    }
+  }
+}
+
+/* comment_body */
+.comment_container {
+  margin-top: 20px;
+}
+.comment-body {
+  /* background-color: red; */
+  padding: 10px;
+  border-bottom: 1px solid black;
+  .comment-author {
+    /* background-color: red; */
+    img {
+      width: 40px;
+    }
+  }
+}
